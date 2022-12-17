@@ -1,0 +1,141 @@
+a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.1s linear;
+}
+a:hover {
+  transition: 0.1s linear;
+  color: aqua;
+}
+a:hover:after {
+  opacity: 1;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  margin-top: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.name {
+  float: right;
+  text-align: center;
+  font-size: 30px;
+}
+.photo {
+  float: left;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.personPhoto {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.main {
+  margin-top: 40px;
+}
+
+.contacts {
+  float: left;
+  margin-right: 300px;
+}
+
+.contacts-list {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.telegram {
+  list-style-image: url(assets/svg/telega.png);
+}
+.VK {
+  list-style-image: url(assets/svg/vk.png);
+}
+.phone {
+  list-style-image: url(assets/svg/phone.png);
+}
+.github {
+  list-style-image: url(assets/svg/github.png);
+}
+.about {
+  margin-left: 450px;
+}
+.skills {
+  margin-top: 100px;
+}
+.skills-list {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+.react {
+  list-style-image: url(assets/svg/react.png);
+}
+.java-script {
+  list-style-image: url(assets/svg/java-script.png);
+}
+.git {
+  list-style-image: url(assets/svg/git.png);
+}
+.html {
+  list-style-image: url(assets/svg/html.png);
+}
+.css {
+  list-style-image: url(assets/svg/css.png);
+}
+
+.codeExample {
+  margin-top: -211px;
+  margin-left: 445px;
+}
+.education {
+  margin-top: 40px;
+}
+.english {
+  margin-top: -88px;
+  margin-left: 440px;
+}
+.footer {
+  margin-top: 40px;
+}
+
+.footer-github {
+  font-size: 24px;
+  list-style-image: url(assets/svg/github24.png);
+  float: left;
+}
+
+.rs-school {
+  text-align: center;
+  float: right;
+}
