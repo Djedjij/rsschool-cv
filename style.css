@@ -123,7 +123,11 @@ body {
 }
 .english {
   margin-top: -88px;
-  margin-left: 440px;
+  margin-left: 445px;
+}
+.projects {
+  margin-left: 445px;
+  margin-top: 40px;
 }
 .footer {
   margin-top: 40px;
@@ -139,3 +143,4 @@ body {
   text-align: center;
   float: right;
 }
+
